@@ -1,0 +1,186 @@
+@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+
+#OpenedSideBar, #ClosedSideBar{
+    --backgroundcolor: #b9ceeb;
+    --contentcolor: #3B424C;
+    --lineColor: white;
+
+    --menuTopMargin: 0px;
+
+}
+
+
+*{
+    box-sizing: initial;
+    padding: 0;
+    margin: 0;
+}
+
+
+#ClosedSideBar{
+    position: absolute;
+    right:0px;
+    top: var(--menuTopMargin);
+
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+
+#SideBarToggle{
+    color: var(--contentcolor);
+    font-size: 30px;
+    font-family: "Apple SD Gothic Neo";
+
+    margin: 10px 10px 0 0;
+}
+
+
+#OpenedSideBar{
+    position: absolute;
+    right:0px;
+    top: var(--menuTopMargin);
+
+    width: 300px;
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    color: var(--contentcolor);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+
+#OpenedSideBar #SideBarToggle{
+    align-self: flex-start;
+
+    margin: 10px 0 0 5%;
+
+
+}
+
+#ProfileMenu{
+    width: 90%;
+    height: 60px;
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ProfileMenu #ProfileMenuImg{
+    height: 50px;
+    width: 50px;
+    margin: 0 0 0 10px;
+
+    border: solid 3px var(--contentcolor);
+    border-radius: 90px;
+    flex-shrink: 0;
+}
+
+#ProfileMenu #ProfileMenuText{
+    width: 130px;
+    height: 50px;
+    margin: 5px 0 0 15px;
+
+    font-family: "Apple SD Gothic Neo";
+    font-size: 10px;
+
+    
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+#ProfileMenu #ProfileMenuText #ProfileMenuName{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+}
+
+#ProfileMenu #ProfileMenuText #ProfileMenuCode{
+    font-size: 10px;
+    margin: 0;
+
+}
+
+
+#ProfileMenu #ProfileMenuIcon{
+    font-size: 25px;
+}
+
+
+#Menus{
+    width: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu{
+    width: 90%;
+    height: 35px;
+
+    text-decoration: none;
+    color: var(--contentcolor);
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Menu .MenuIcon{
+    margin: 0 0 0 10px;
+    width: 50px;
+    font-size: 30px;
+}
+
+.Menu .MenuText{
+    margin: 0 0 0 10px;
+    
+    font-family: "Apple SD Gothic Neo";
+    font-size: 15px;
+}
+
+#IntroMenu{
+    width: 90%;
+}
+
+#IntroMenu #IntroMenuText{
+    margin: 0 5px 0 0;
+
+    font-family: "Apple SD Gothic Neo";
+    font-size: 12px;
+    line-height: 25px;
+    text-align: right;
+}
+
+#LogoutMenu{
+    width: 90%;
+    padding: 0 0 10px 0;
+}
+
+
+.DivisionLine{
+    width: 90%;
+    height: 1px;
+    margin: 8px 15px 8px 15px;
+
+    border: none;
+
+    background-color: var(--lineColor);
+}
+
